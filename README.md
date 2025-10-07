@@ -20,11 +20,10 @@ To the best of our knowledge, PU2756 is currently the **largest publicly availab
 The **segmentation stage** is implemented in a separate module, which generates the region of interest (ROI) masks used for classification.  
 You can find the segmentation code and detailed instructions in the following directory:
 
-👉 [Segmentation Code and README](//)  
+👉 [Segmentation Code and README](/segment/)  
 
-*(Please replace the above link `//` with the actual path to your segmentation module.)*
 
----
+
 
 ## 🧠 Step 2: Classification
 
