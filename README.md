@@ -49,4 +49,38 @@ PU2756/
 │
 ├── CNN/            # Deep learning model: for example ResNet
 
+```
+
+
+## ⚙️ How to Run
+
+### 1️⃣ Prepare Environment and Dependencies
+
+Make sure you have **Python ≥ 3.8** installed.
+
+Install all necessary third-party libraries listed in **`requirements.txt`**:
+
+```bash
+pip install -r requirements.txt
+```
+
+---
+
+### 2️⃣ Example: Train a Deep Learning Model
+
+
+```bash
+python main.py
+```
+
+
+
+
+
+✅ **Tip:**  
+Make sure the segmentation results (ROI masks or cropped images) are ready before classification.  
+You can find the segmentation module and instructions in:
+
+- Folder: `segment/`
+- Documentation: `segment/README.md`
 
