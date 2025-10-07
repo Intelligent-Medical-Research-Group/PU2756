@@ -70,7 +70,8 @@ pip install -r requirements.txt
 
 
 ```bash
-python main.py
+cd CNN
+python train_resnet.py
 ```
 
 
