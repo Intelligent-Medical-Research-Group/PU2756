@@ -11,7 +11,7 @@ To the best of our knowledge, PU2756 is currently the **largest publicly availab
 
 ---
 
-## 🚀 Step 1: Image Segmentation
+## 🚀 Step 1: Segmentation
 
 The **segmentation stage** is implemented in a separate module, which generates the region of interest (ROI) masks used for classification.  
 You can find the segmentation code and detailed instructions in the following directory:
@@ -24,16 +24,29 @@ You can find the segmentation code and detailed instructions in the following di
 
 ## 🧠 Step 2: Classification
 
-After obtaining the segmented lung regions, the classification code in this repository can be used to:
 
-- Load segmented or cropped ultrasound images  
-- Extract features using deep neural networks  
-- Train and evaluate classification models  
-- Report accuracy and other performance metrics  
+This repository provides multiple **classification approaches** for the PU2756 lung ultrasound dataset, organized into separate folders for clarity and reproducibility.
 
-Detailed usage instructions and configuration files will be added soon.
+The implemented methods include:
 
----
+- **Radiomics + XGBoost**
+- **Autoencoder + Radiomics + XGBoost**
+- **Deep Learning–Based Models**
 
-## 📁 Repository Structure
+Each model type is implemented in an individual subfolder for modular management and easy benchmarking.
+
+
+## 📁 Directory Structure
+
+
+```text
+PU2756/
+├── RADIOMICS/      # Radiomics feature extraction + XGBoost classification
+│
+├── AE/      # Autoencoder feature extraction + XGBoost classification
+│
+├── MIX/            # Autoencoder feature learning + Radiomics + XGBoost classification
+│
+├── CNN/            # Deep learning model: for example ResNet
+
 
